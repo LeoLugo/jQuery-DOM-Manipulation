@@ -22,8 +22,14 @@ body {
 }
 
 .change {
-	display:none;
+	display:block;
 	height:0;
+	transition: height 1s;
+	overflow:auto;
+}
+
+.change:target {
+	height: 100px;
 }
 
 span.show {
@@ -47,4 +53,12 @@ h1 {
 span {
 	padding-top: 10px;
 	text-align: center;
+	height:;
 }
+
+a, a:link, a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+
